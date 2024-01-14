@@ -2,6 +2,7 @@ package CycleSort;
 
 import java.util.Arrays;
 
+// If you find the array in range use Cycle Sort
 public class CycleSort {
     public static void main(String[] args) {
         int[] arr = {5, 3, 4, 2, 1};
@@ -11,15 +12,15 @@ public class CycleSort {
 
     //{5, 3, 4, 2, 1}
     private static void cyclicSort(int[] arr) {
-        int i = 0;
-        while (i < arr.length) {
-            int correct = arr[i] - 1;
-            if (arr[i] != arr[correct]) {
-                swapElement(arr,i, correct);
-            }else{
-                i++;
-            }
-        }
+       int i =0;
+       while (i< arr.length){
+           int correctIndex = arr[i]-1;
+           if (arr[i]!= arr[correctIndex]){
+               swapElement(arr,i,correctIndex);
+           }else {
+               i++;
+           }
+       }
     }
 
     private static void swapElement(int[] arr, int first, int second) {

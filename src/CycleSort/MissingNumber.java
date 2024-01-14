@@ -11,7 +11,7 @@ public class MissingNumber {
     private static int findMissingNumber(int[] arr) {
         int i = 0;
         while (i < arr.length) {
-            int correct = arr[i];
+            int correct = arr[i] - 1;
             if (arr[i] < arr.length && arr[i] != arr[correct]) {
                 swapElement(arr, i, correct);
             } else {
