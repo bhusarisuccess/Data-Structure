@@ -1,7 +1,7 @@
 package Recursion;
 
 /*
-Print Pattern given below
+Print the Pattern given below
     Example :input  n =4
 
     4444333322221111
@@ -12,7 +12,7 @@ Print Pattern given below
 * */
 public class PatternPrograms {
     public static void main(String[] args) {
-        int num = 3;
+        int num = 4;
         printPattern(num, num);
     }
 
